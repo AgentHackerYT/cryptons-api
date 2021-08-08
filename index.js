@@ -1,0 +1,6 @@
+module.exports.client = require('./src/main.js')
+module.exports.LogoGame = require('./src/classes/logogame.js')
+module.exports.Covid = require('./src/classes/covid.js')
+module.exports.keyUtils = require('./src/keyUtils.js')
+module.exports.IMDB = require('./src/classes/imdb.js')
+module.exports.ButtonPage = require('./src/classes/bpage.js')
