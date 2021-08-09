@@ -9,13 +9,13 @@ class LogoGame {
      * @param {any} [options.winMessage] win message
      */
     constructor(options) {
-        if(!options.token) throw new TypeError('Missing argument: key')
-        if(typeof options.token !== 'string') throw new TypeError('key must be in a string')
+        if(!options.key) throw new TypeError('Missing argument: key')
+        if(typeof options.key !== 'string') throw new TypeError('key must be in a string')
       
         if(!options.message) throw new TypeError('Missing argument: message')
     
         this.message = options.message;
-        this.key = options.token;
+        this.key = options.key;
       
     }
     async start() {
@@ -60,7 +60,7 @@ gameCollector.stop()
           }else if (selection === "stop") {
             this.message.channel.send({embed: wrong})
             gameCollector.stop();
-          } else if (selection !== data.Data.name ) {
+          } else if (selection !== data.answer.shift() || data.answer.pop() ) {
             this.message.channel.send(`Wrong Guess Try Again! - Type stop to cancel the Game`).then(msg => {
                 msg.delete({ timeout: 20000 /*time unitl delete in milliseconds*/});
             })
