@@ -1,4 +1,9 @@
 # Cryptons API
+[![npm version](https://badge.fury.io/js/cryptons-api.svg)](https://www.npmjs.com/package/cryptons-api)
+[![Build Status](https://travis-ci.org/AgentHackerYT/cryptons-api.svg?branch=main)](https://travis-ci.org/AgentHackerYT/cryptons-api)
+[![Dependency Status](https://david-dm.org/AgentHackerYT/cryptons-api.svg)](https://david-dm.org/AgentHackerYT/cryptons-api)
+
+
 - A Simple Module For [The Cryptons API](https://cryptons.ga/)
 - More Functions Will be added soon
 # How to use
