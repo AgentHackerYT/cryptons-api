@@ -51,16 +51,16 @@ class LogoGame {
     const gameFilter = m => m.author.id
     const gameCollector = this.message.channel.createMessageCollector(gameFilter);
 
-    gameCollector.on('collect', async msg => {
+   gameCollector.on('collect', async msg => {
       if(msg.author.bot) return
           const selection = msg.content.toLowerCase();
-if (selection === data.answer.shift() || data.answer.pop()) {
+if (selection.includes(ans)) {
 this.message.reply({embed: right})
 gameCollector.stop()
           }else if (selection === "stop") {
             this.message.channel.send({embed: wrong})
             gameCollector.stop();
-          } else if (selection !== data.answer.shift() || data.answer.pop() ) {
+          } else if (!selection.includes(ans)) {
             this.message.channel.send(`Wrong Guess Try Again! - Type stop to cancel the Game`).then(msg => {
                 msg.delete({ timeout: 20000 /*time unitl delete in milliseconds*/});
             })
