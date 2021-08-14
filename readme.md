@@ -18,7 +18,7 @@
 - [Cryptons API](https://cryptons.ga/) Node.JS Client
 - More Functions Will be added soon
 
-# What is this package? <img src = "https://cdn.discordapp.com/emojis/865129074367660074.gif?v=1" alt="what" width=40>
+# What is this package? <img src = "https://cdn.discordapp.com/emojis/854915298724282379.gif?v=1" alt="what" width=40>
 
 - A fun npm package to use Cryptons API and many more utilities!
 
@@ -28,14 +28,14 @@
 - ✨ Simple
 - 🔘 Updates Frquently!
 
-## Installation <img src = "https://cdn.discordapp.com/emojis/815135700063879219.gif?v=1" alt="install" width=40>
+## Installation <img src = "https://cdn.discordapp.com/emojis/852546107279147028.gif?v=1" alt="install" width=40>
 
 **From NPM:**
 ```sh
 npm install cryptons-api
 ```
 
-## Configuration <img src = "https://cdn.discordapp.com/emojis/815135700063879219.gif?v=1" alt="config" width=40>
+## Configuration <img src = "https://cdn.discordapp.com/emojis/830498299584446494.gif?v=1" alt="config" width=40>
 
 You will need your Cryptons API key to use `cryptons-api`.
 
@@ -71,6 +71,8 @@ crypton.covidworld((cases , deaths, recovered , active, closedcases,mildcases, c
 crypton.covid((country ,cases , recov , death , dischargerate , deathrate , closed , flaglink) => {console.log(country + cases + recov + death + dischargerate + deathrate + closed + flaglink)})
 
 ```
-# Credits
-Agent Hacker#0477 and Tejas Lamba#1924
+## Developers 👨‍💻
+- **[Tejas#1924](https://github.com/TajuModding)**
+- **[Agent Hacker#0477](https://github.com/AgentHackerYT)**
+
 
