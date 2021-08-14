@@ -18,6 +18,16 @@
 - [Cryptons API](https://cryptons.ga/) Node.JS Client
 - More Functions Will be added soon
 
+# What is this package?
+
+- A fun npm package to use Cryptons API and many more utilities!
+
+## Features
+- 🧑 Beginner friendly
+- 🎉 Easy to use
+- ✨ Simple
+- 🔘 Updates Frquently!
+
 ## Installation <img src = "https://cdn.discordapp.com/emojis/763159009686585354.gif?v=1" alt="download" width=40>
 
 **From NPM:**
