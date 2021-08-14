@@ -32,6 +32,8 @@ interface ClientOptions {
 export class covid {
     constructor(options: covidOptions)
 }
+export function insult()
+export function nameservers()
 interface covidOptions{
     country: string;
     title: string;
@@ -48,7 +50,7 @@ interface LogoGameOptions {
     message: string;
     token: string;
 }
-export class ButtonPage {
+/*export class ButtonPage {
     constructor(options: btnpageOptions)
     public init(): Promise<any>
 }
@@ -60,4 +62,4 @@ interface btnpageOptions {
     timeout: string;
     color: string;
     client: string;
-}
+}*/
