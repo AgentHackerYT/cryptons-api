@@ -72,7 +72,7 @@ crypton.covid((country ,cases , recov , death , dischargerate , deathrate , clos
 
 ```
 ## Developers 👨‍💻
-- **[Tejas#1924](https://github.com/TajuModding)**
+- **[Tejas Laba#1924](https://github.com/TajuModding)**
 - **[Agent Hacker#0477](https://github.com/AgentHackerYT)**
 
 
