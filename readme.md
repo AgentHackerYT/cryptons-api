@@ -18,31 +18,24 @@
 - [Cryptons API](https://cryptons.ga/) Node.JS Client
 - More Functions Will be added soon
 
-# What is this package?
+# What is this package? <img src = "https://cdn.discordapp.com/emojis/865129074367660074.gif?v=1" alt="what" width=40>
 
 - A fun npm package to use Cryptons API and many more utilities!
 
-## Features
+## Features <img src = "https://cdn.discordapp.com/emojis/815135700063879219.gif?v=1" alt="install" width=40>
 - 🧑 Beginner friendly
 - 🎉 Easy to use
 - ✨ Simple
 - 🔘 Updates Frquently!
 
-## Installation <img src = "https://cdn.discordapp.com/emojis/763159009686585354.gif?v=1" alt="download" width=40>
+## Installation <img src = "https://cdn.discordapp.com/emojis/815135700063879219.gif?v=1" alt="install" width=40>
 
 **From NPM:**
-```bash
-[sudo] npm install cryptons-api
+```sh
+npm install cryptons-api
 ```
 
-**From source:**
-```bash
-git clone git://github.com/AgentHackerYT/cryptons-api.git
-cd ./cryptons-api
-npm install
-```
-
-## Configuration
+## Configuration <img src = "https://cdn.discordapp.com/emojis/815135700063879219.gif?v=1" alt="config" width=40>
 
 You will need your Cryptons API key to use `cryptons-api`.
 
