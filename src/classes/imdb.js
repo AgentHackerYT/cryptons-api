@@ -17,6 +17,7 @@ class imdb {
             .addField("Country", movie.country, true)
             .addField("Languages", movie.languages, true)
             .addField("Type", movie.genere, true);
+            options.message.channel.send(embed)
         })
     }
 }

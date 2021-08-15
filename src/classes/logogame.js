@@ -1,4 +1,3 @@
-const { tokencheck } = require('../util')
 class LogoGame {
     /**
      * @name LogoGame
@@ -9,24 +8,24 @@ class LogoGame {
      * @param {any} [options.winMessage] win message
      */
     constructor(options) {
-        if(!options.key) throw new TypeError('Missing argument: key')
-        if(typeof options.key !== 'string') throw new TypeError('key must be in a string')
+        if(!options.token) throw new TypeError('Missing argument: key')
+        if(typeof options.token !== 'string') throw new TypeError('key must be in a string')
       
         if(!options.message) throw new TypeError('Missing argument: message')
     
         this.message = options.message;
-        this.key = options.key;
+        this.key = options.token;
       
     }
     async start() {
-        tokencheck(this.key, (res)=>{
-            if(res == "no") throw new Error('Invalid Key')
-        })
+        
         const fetch = require("node-fetch")
         const Discord = require('discord.js');
         fetch(`https://cryptons.ga/api/v1/logo_game`)
         .then(res => res.json())
         .then(data => {
+
+          const ans = data.answer
           
     const pok = new Discord.MessageEmbed()
     .setTitle(`What's that Logo?`)
@@ -43,7 +42,7 @@ class LogoGame {
     const wrong = new Discord.MessageEmbed()
     .setTitle(`You Lost`)
     .setAuthor(this.message.author.tag)
-    .setDescription(`It was ${data.answer.shift()}`)
+    .setDescription(`It was ${data.answer.pop()}`)
     .setImage(data.logo)
     
 
@@ -51,7 +50,7 @@ class LogoGame {
     const gameFilter = m => m.author.id
     const gameCollector = this.message.channel.createMessageCollector(gameFilter);
 
-   gameCollector.on('collect', async msg => {
+    gameCollector.on('collect', async msg => {
       if(msg.author.bot) return
           const selection = msg.content.toLowerCase();
 if (selection.includes(ans)) {

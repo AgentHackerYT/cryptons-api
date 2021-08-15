@@ -1,7 +1,7 @@
 /**
  * Coming Soon
  */
-const but = require('discord-buttons')
+/*const but = require('discord-buttons')
 "use strict";
 class ButtonPage  {
     constructor(options){
@@ -48,4 +48,4 @@ class ButtonPage  {
                     return curPage
                 }
 }
-module.exports = ButtonPage 
+module.exports = ButtonPage */
