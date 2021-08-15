@@ -1,6 +1,6 @@
 {
   "name": "cryptons-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Module to use cryptons api",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.5.3",
+    "canvas": "^2.8.0",
     "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "discord.js": "^12.5.3"
   }
 }

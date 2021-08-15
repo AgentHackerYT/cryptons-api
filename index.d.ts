@@ -13,6 +13,7 @@ constructor(options: imdbOptions)
 interface imdbOptions {
     key: string;
     movie: string;
+    message: string;
 }
 export class client {
     constructor(options: ClientOptions) 
@@ -34,8 +35,10 @@ export class covid {
 }
 export function insult()
 export function nameservers()
+export function script()
 interface covidOptions{
     country: string;
+    message: string;
     title: string;
     description: string;
     color: string;
@@ -46,6 +49,21 @@ export class LogoGame {
     constructor(options: LogoGameOptions)
     public start(): Promise<any>
 }
+export class MS {
+    constructor(options: MSOptions)
+    public output(): Promise<any>
+}
+interface MSOptions {
+size: number | string;
+bomb: number | string;
+}
+/*export class clyde{
+    constructor(options: clydeOptions)
+}
+interface clydeOptions {
+    text: string;
+}*/
+export async function randomusername()
 interface LogoGameOptions {
     message: string;
     token: string;

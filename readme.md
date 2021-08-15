@@ -41,38 +41,124 @@ You will need your Cryptons API key to use `cryptons-api`.
 
 Keys can be found at: https://discord.gg/vUYvswzwMH
 
-```js
-const api = require('cryptons-api')
-const crypton = new api.client('key here')
-```
-
 # Usage <img src = "https://cdn.discordapp.com/emojis/837910195450937384.png?v=1" alt = "hmmm" width=40>
+- Covid Command (For Discord)
 ```js
-
-//-------------------------------------Key Check-----------------------------------------\\
-crypton.tokencheck(res =>{console.log(res)})
-//-------------------------------------API Stats-----------------------------------------\\
-crypton.stats((node , platform , cpu , arch , memuse)=>{console.log(`node: ${node}, platform: ${platform} , arch: ${arch} , memuse: ${memuse}`)})
-//-------------------------------------Random Meme-----------------------------------------\\
-crypton.meme((img , title , upvote , downvote , comments , url)=>{
-    console.log(`image: ${img} , title: ${title} , upvotes: ${upvotes} , downvotes: ${downvotes} , comments: ${comments} , url: ${url}`)
+const { Covid } = require('cryptons-api')
+//world
+new Covid({
+    message: message
+    country: 'world',
+    title: title,
+    description: 'Covid Cases',
+    color: 'RANDOM',
+    footer: 'Made By Cryptons API NPM',
+    addFieldOption : true || false
 })
-//---------------------------------Discord User INFO-----------------------------------------\\
-crypton.discorduser(discord_id , (username , avatar , disriminator , banner , banner_color , accent_color)=>{console.log(all things)})
-//-------------------------------------Random Insult-----------------------------------------\\
-crypton.insult(insult =>{console.log(insult)})
-//--------------------------Get NameServers of a domain-----------------------------------------\\
-crypton.nameservers(domain , result=>{console.log(result)})
-//---------------------------------Get Banner of user-----------------------------------------\\
-crypton.userbanner(discord_id , res=>{console.log(res)})
-//-------------------------------------World Covid Stats-----------------------------------------\\
-crypton.covidworld((cases , deaths, recovered , active, closedcases,mildcases, criticalcases)=>{console.log(cases + deaths + recovered + active + closedcases + mildcases + criticalcases)})
-//-------------------------------------Country Covid Stats-----------------------------------------\\
-crypton.covid((country ,cases , recov , death , dischargerate , deathrate , closed , flaglink) => {console.log(country + cases + recov + death + dischargerate + deathrate + closed + flaglink)})
+// covid
+new Covid({
+    message: message
+    country: 'india',
+    title: title,
+    description: 'Covid Cases',
+    color: 'RANDOM',
+    footer: 'Made By Cryptons API NPM',
+    addFieldOption : true || false
+})
+```
+- IMDB For Discord.js
+```js
+const { IMDB } = require('cryptons-api')
+new IMDB({
+    message: message,
+    key: 'IMDB_KEY',
+    movie: 'Movie Name'
+})
+```
+- Token Utils
+```js
+const { keyUtils } = require('cryptons-api')
+const keyutil = new keyUtils({
+    token: 'Cryptons api key'
+})
+// returns your cryptons api token
+keyutil.getKey()
 
+// checks your token
+let check = keyutil.chechKey()
+console.log(check)
+```
+- Logo Game for Discord.js
+```js
+const { LogoGame } = require('cryptons-api')
+new LogoGame({
+    token: 'Cryptons-Token',
+    message: message
+})
+```
+- Insult
+```js
+const { insult } = require('cryptons-api')
+insult(r =>{
+    console.log(r)
+})
+```
+- Random Username generator
+```js
+const { randomusername } = require('cryptons-api')
+randomusername(r =>{
+    console.log(r)
+})
+```
+- Script
+```js
+const { script }  = require('cryptons-api')
+script(r =>{
+    console.log(r)
+})
+```
+```js
+const { namserver } = require('cryptons-api')
+nameserver('https://cryptons.ga' , r =>{
+    console.log(r)
+})
+```
+- Minesweeper For Discord.js
+```js
+const { MS } = require('cryptons-api')
+const ms = new MS({
+    size: 20,
+    bomb: 10
+})
+ms.output()
 ```
 ## Developers 👨‍💻
 - **[Tejas Laba#1924](https://github.com/TajuModding)**
 - **[Agent Hacker#0477](https://github.com/AgentHackerYT)**
-
+# Old Client
+- It will be not updated
+```js
+const api = require('cryptons-api')
+const crypton = new api.client('key here (optional)')
+////////////////////////////////
+crypton.tokencheck(res =>{console.log(res)})
+////////////////////////////////
+crypton.stats((node , platform , cpu , arch , memuse)=>{console.log(`node: ${node}, platform: ${platform} , arch: ${arch} , memuse: ${memuse}`)})
+////////////////////////////////
+crypton.meme((img , title , upvote , downvote , comments , url)=>{
+    console.log(`image: ${img} , title: ${title} , upvotes: ${upvotes} , downvotes: ${downvotes} , comments: ${comments} , url: ${url}`)
+})
+////////////////////////////////
+crypton.discorduser(discord_id , (username , avatar , disriminator , banner , banner_color , accent_color)=>{console.log(all things)})
+////////////////////////////////
+crypton.insult(insult =>{console.log(insult)})
+////////////////////////////////
+crypton.nameservers(domain , result=>{console.log(result)})
+////////////////////////////////
+crypton.userbanner(discord_id , res=>{console.log(res)})
+////////////////////////////////
+crypton.covidworld((cases , deaths, recovered , active, closedcases,mildcases, criticalcases)=>{console.log(cases + deaths + recovered + active + closedcases + mildcases + criticalcases)})
+////////////////////////////////
+crypton.covid((country ,cases , recov , death , dischargerate , deathrate , closed , flaglink) => {console.log(country + cases + recov + death + dischargerate + deathrate + closed + flaglink)})
+```
 
