@@ -42,7 +42,7 @@ You will need your Cryptons API key to use `cryptons-api`.
 Keys can be found at: https://discord.gg/vUYvswzwMH
 
 ## Usage
-[Covid Command](./main/covid.md)
+[Covid Command](/docs/main/covid.md)
 
 ## Developers 👨‍💻
 - **[Tejas Laba#1924](https://github.com/TajuModding)**
