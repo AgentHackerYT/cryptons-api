@@ -9,7 +9,6 @@
 /"><img src="https://nodei.co/npm/cryptons-api.png?downloads=true&stars=true" alt="NPM Info" /></a>
   </p>
 </div>
-<title>Cryptons API | Official Docs</title>
 <div align="center">
  <p>
  For errors and questions you can join <a href="https://discord.gg/vUYvswzwMH">our support server</a></p>
