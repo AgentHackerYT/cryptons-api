@@ -1,13 +1,13 @@
 {
   "name": "cryptons-api",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "A Module to use cryptons api",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "AgentHackerYT",
   "license": "ISC",
   "dependencies": {
     "canvas": "^2.8.0",
@@ -15,5 +15,13 @@
   },
   "devDependencies": {
     "discord.js": "^12.5.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgentHackerYT/cryptons-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AgentHackerYT/cryptons-api/issues"
+  },
+  "homepage": "https://cryptons-api.js.org/"
 }

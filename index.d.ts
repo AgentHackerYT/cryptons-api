@@ -33,9 +33,45 @@ interface ClientOptions {
 export class covid {
     constructor(options: covidOptions)
 }
+export class captcha{
+    constructor(options: oneInput)
+}
+export class clyde{
+    constructor(options: oneInput)
+}
+export class cti{
+    constructor(options: oneInput)
+}
+export class mocktext{
+    constructor(options: oneInput)
+}
+export class pablo{
+    constructor(options: oneInput)
+}
+export class pabloEveryone{
+    constructor(options: oneInput)
+}
+export class twobuttons{
+constructor(options: btn)
+}
+interface btn{
+    btn1: string;
+    btn2: string;
+}
+interface oneInput{
+text: string;
+}
+export function covid()
+export function covidWorld()
+export function discorduser()
 export function insult()
+export function meme()
 export function nameservers()
+export function randomusername()
 export function script()
+export function stats()
+export function userbanner()
+
 interface covidOptions{
     country: string;
     message: string;
@@ -63,7 +99,6 @@ bomb: number | string;
 interface clydeOptions {
     text: string;
 }*/
-export async function randomusername()
 interface LogoGameOptions {
     message: string;
     token: string;
