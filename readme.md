@@ -47,7 +47,7 @@ Keys can be found at: https://discord.gg/vUYvswzwMH
 const { Covid } = require('cryptons-api')
 //world
 new Covid({
-    message: message
+    message: message,
     country: 'world',
     title: title,
     description: 'Covid Cases',
@@ -57,7 +57,7 @@ new Covid({
 })
 // covid
 new Covid({
-    message: message
+    message: message,
     country: 'india',
     title: title,
     description: 'Covid Cases',
@@ -85,7 +85,7 @@ const keyutil = new keyUtils({
 keyutil.getKey()
 
 // checks your token
-let check = keyutil.chechKey()
+let check = keyutil.checkKey()
 console.log(check)
 ```
 - Logo Game for Discord.js
@@ -117,6 +117,7 @@ script(r =>{
     console.log(r)
 })
 ```
+- nameserver
 ```js
 const { namserver } = require('cryptons-api')
 nameserver('https://cryptons.ga' , r =>{
@@ -132,14 +133,79 @@ const ms = new MS({
 })
 ms.output()
 ```
+- Covid and Covid World 
+```js
+// Covid For a country
+const { covid } = require('cryptons-api')
+covid((country ,cases , recov , death , dischargerate , deathrate , closed , flaglink) =>{ 
+    console.log(country  + cases + recov +  death + dischargerate + deathrate + closed + flaglink )
+})
+//Covid World
+const { covidWorld } = require('cryptons-api')
+covidWorld((cases , deaths, recov , active, close,mild, critical)=>{
+    console.log(cases + deaths + recov +  active + close + mild + critical)
+})
+```
+- Discord User Info
+```js
+const { discorduser } = require('cryptons-api')
+discorduser(discord_id , (username , avatar , disriminator , banner , banner_color , accent_color)=>{
+    console.log(username + avatar + disriminator + banner + banner_color + accent_color)
+    })
+```
+- Stats
+```js
+const { stats } = require('cryptons-api')
+stats((node, platform , cpu , arch , memuse) =>{
+    console.log(node + platform + cpu + arch + memuse)
+})
+```
+- Random Programing language name
+```js
+const { script } = require('cryptons-api')
+script(r =>{
+    console.log(r)
+})
+```
+- Meme
+```js
+const { meme } = require('cryptons-api')
+meme((img , title , upvote , downvote , comments , url)=>{
+    console.log(`image: ${img} , title: ${title} , upvotes: ${upvotes} , downvotes: ${downvotes} , comments: ${comments} , url: ${url}`)
+})
+```
+- Clyde
+```js
+const { clyde } = require('cryptons-api')
+const a = new clyde({
+    text: something_here
+})
+message.channel.send(a)
+```
+- Same Usage as Clyde
+`Captcha`
+`cti`
+`mocktext`
+`pablo`
+`pabloeveryone`
+- Two Buttons
+```js
+const { twobuttons } = require('cryptons-api')
+const a = new twobuttons({
+    btn1: something_here,
+    btn2: something_here_as_well,
+})
+```
 ## Developers 👨‍💻
-- **[Tejas Laba#1924](https://github.com/TajuModding)**
+- **[Tejas Lamba#1924](https://github.com/TajuModding)**
 - **[Agent Hacker#0477](https://github.com/AgentHackerYT)**
 # Old Client
 - It will be not updated
 ```js
 const api = require('cryptons-api')
-const crypton = new api.client('key here (optional)')
+const crypton = new api.client({
+    token:'key here (optional)'
+    })
 ////////////////////////////////
 crypton.tokencheck(res =>{console.log(res)})
 ////////////////////////////////
