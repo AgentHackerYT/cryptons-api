@@ -5,8 +5,7 @@ class clyde {
    constructor(options){
 const input = options.text
 if(typeof input == "undefined") throw new Error('No Text Found')
-const a = `https://cryptons.ga/api/v1/clyde?text=${input}`
-const final = new MessageAttachment(a , 'clyde.png')
+const final = `https://cryptons.ga/api/v1/clyde?text=${input}`
 return final
         }
 }
