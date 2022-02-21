@@ -15,6 +15,9 @@ interface imdbOptions {
     movie: string;
     message: string;
 }
+/**
+@deprecated use the new functions and classes instead
+*/
 export class client {
     constructor(options: ClientOptions) 
         public tokencheck(): Promise<any>
