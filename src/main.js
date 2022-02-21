@@ -1,6 +1,9 @@
 const fetch = require('node-fetch');
 var baseurl = "https://cryptons.ga"
 var token;
+/**
+@deprecated use the new functions and classes instead
+*/
 class client {
     constructor(options){
         if(options.token !== null){
