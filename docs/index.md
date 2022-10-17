@@ -102,6 +102,7 @@ insult(r =>{
     console.log(r)
 })
 ```
+
 - Random Username generator
 ```js
 const { randomusername } = require('cryptons-api')
